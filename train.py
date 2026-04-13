@@ -6,7 +6,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import pickle
 import json
 
-df = pd.read_csv("Dataset/winequality-red.csv")
+df = pd.read_csv("Dataset/winequality-red.csv", sep=";")
 
 X = df.drop('quality', axis=1)
 y = df['quality']
